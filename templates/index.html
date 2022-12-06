@@ -1,0 +1,15 @@
+{% load static %}
+
+<link rel="sytlesheet" href="{% static 'style.css' %}">
+
+<h1>
+    {{judul}}<br>{{lab}}<br>
+    Input Text Dibawah :
+</h1>
+
+<form method="POST" action="counter">
+    {% csrf_token %}
+    <textarea name="text" rows="10" cols="50"></textarea><br>
+    <input type="submit"/>
+</form>
+<!-- <img src = "https://www.google.co.id/url?sa=i&url=https%3A%2F%2Fchainsaw-man.fandom.com%2Fwiki%2FDenji&psig=AOvVaw1oaivNF3yyT3xy5YTbeNVt&ust=1670407881294000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKjbyrTg5PsCFQAAAAAdAAAAABAE"/> -->
